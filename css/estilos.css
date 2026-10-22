@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f5f0e6;
+    color: #33302a;
+    line-height: 1.7;
+}
+
+body > div:first-child {
+    background-color: #243b32;
+    color: #f5f0e6;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #b59a5b;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+h2 {
+    color: #344e41;
+    margin-top: 0;
+}
+
+body > div:first-child h2 {
+    color: #d7c18a;
+    margin-bottom: 5px;
+}
+
+body > div:first-child p {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+body > div:nth-child(2) {
+    background-color: #e7dfcf;
+    padding: 10px 20px;
+    border-bottom: 1px solid #c9b995;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    color: #344e41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #92773e;
+}
+
+body > div:nth-child(3) {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+body > div:nth-child(3) > div {
+    background-color: #fffdf8;
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #ded4bf;
+    border-left: 5px solid #b59a5b;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+body > div:nth-child(3) h2 {
+    border-bottom: 1px solid #d8c9a9;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #827044;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+body > div:nth-child(3) > div:last-child > div {
+    background-color: #e7dfcf;
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #b59a5b;
+    border-radius: 5px;
+}
+
+body > div:nth-child(3) > div:last-child > div p {
+    margin: 0;
+    font-style: italic;
+}
+
+body > div:last-child {
+    background-color: #243b32;
+    color: #f5f0e6;
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 5px solid #b59a5b;
+}
+
+body > div:last-child p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    body > div:first-child {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    body > div:nth-child(3) {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    body > div:nth-child(3) > div {
+        padding: 18px;
+    }
+}
