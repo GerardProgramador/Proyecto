@@ -45,11 +45,35 @@
         <div>
             <h2>¡Pon a prueba tus conocimientos!</h2>
             <p>¿Cuánto aprendiste sobre el Beato José Ferrer Esteve? Resuelve este pequeño desafío.</p>
+
             <div>
-                <p>Próximamente espacio interactivo</p>
+                <p id="pregunta">¿En qué año nació el Beato José Ferrer Esteve?</p>
+
+                <label>
+                    <input type="radio" name="respuesta" value="1904">
+                    1904
+                </label>
+
+                <label>
+                    <input type="radio" name="respuesta" value="1917">
+                    1917
+                </label>
+
+                <label>
+                    <input type="radio" name="respuesta" value="1936">
+                    1936
+                </label>
+
+                <button id="comprobar">Comprobar respuesta</button>
+
+                <p id="resultado"></p>
+                <p id="puntuacion"></p>
+
+                <button id="siguiente" hidden>Siguiente pregunta</button>
             </div>
         </div>
     </div>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
