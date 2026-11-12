@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beato José Ferrer Esteve - Rostros de la Santidad Escolapia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div>
+        <h1>Beato José Ferrer Esteve</h1>
+        <h2>Rostros de la Santidad Escolapia</h2>
+        <p>Un testimonio de fe y educación</p>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#vida-escolapia">Vida Escolapia</a></li>
+            <li><a href="#testimonio">Testimonio y Martirio</a></li>
+            <li><a href="#desafio">Desafío Interactivo</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <div id="biografia">
+            <h2>Orígenes y primeros años</h2>
+            <img src="./img/Beato2.png" alt="Primera imagen biográfica">
+            <p>El Beato José Ferrer Esteve nació el 17 de febrero de 1904 en la ciudad de Algemesí, provincia de Valencia, España. Desde temprana edad creció en un ambiente de profunda piedad cristiana que fomentó su fe, encaminándolo muy pronto hacia la vida religiosa y la vocación de educar.</p>
+        </div>
+
+        <div id="vida-escolapia">
+            <h2>Su camino en las Escuelas Pías</h2>
+            <h3>Siguiendo a San José de Calasanz</h3>
+            <img src="./img/Beato1.png" alt="Segunda imagen de su vida escolapia">
+            <p>Ingresó a la Orden de las Escuelas Pías siendo aún niño, comenzando su formación en la Masía del Pilar de Godelleta. En 1917 realizó el postulantado y luego el noviciado en Albarracín. Tras cursar la carrera eclesiástica y recibir la ordenación sacerdotal, desarrolló con gran devoción su ministerio docente. Ejerció su labor educativa y pastoral acompañando a los jóvenes en los colegios de Albacete, su natal Algemesí y Utiel.</p>
+        </div>
+
+        <div id="testimonio">
+            <h2>Un testimonio hasta el final</h2>
+            <p>Durante la época de persecución religiosa en la Guerra Civil Española, el Padre José Ferrer Esteve se mantuvo firme en su vocación y nunca ocultó su condición de sacerdote escolapio. Fue apresado y finalmente sufrió el martirio, siendo asesinado por su fe el 9 de diciembre de 1936 en la localidad de Llombai. La Iglesia reconoció su entrega heroica y fue beatificado solemnemente el 1 de octubre de 1995.</p>
+        </div>
+
+        <div id="desafio">
+            <h2>¡Pon a prueba tus conocimientos!</h2>
+            <p>¿Cuánto aprendiste sobre el Beato José Ferrer Esteve? Resuelve este pequeño desafío.</p>
+
+            <div>
+                <p id="pregunta">¿En qué año nació el Beato José Ferrer Esteve?</p>
+
+                <label>
+                    <input type="radio" name="respuesta" value="1904">
+                    1904
+                </label>
+
+                <label>
+                    <input type="radio" name="respuesta" value="1917">
+                    1917
+                </label>
+
+                <label>
+                    <input type="radio" name="respuesta" value="1936">
+                    1936
+                </label>
+
+                <button id="comprobar">Comprobar respuesta</button>
+
+                <p id="resultado"></p>
+                <p id="puntuacion"></p>
+
+                <button id="siguiente" hidden>Siguiente pregunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
