@@ -64,7 +64,7 @@ comprobar.addEventListener("click", function() {
     let seleccionada = document.querySelector('input[name="respuesta"]:checked');
 
     if (!seleccionada) {
-        resultado.textContent = "Seleccioná una respuesta antes de continuar.";
+        alert("Seleccioná una respuesta antes de continuar.");
         return;
     }
 
@@ -88,8 +88,17 @@ comprobar.addEventListener("click", function() {
     if (indice < preguntas.length - 1) {
         siguiente.hidden = false;
     } else {
-        resultado.textContent += " Desafío terminado.";
+        resultado.textContent = "Desafío terminado.";
         puntuacion.textContent = "Resultado final: " + puntos + " de " + preguntas.length;
+        
+       
+        if (puntos === 0) {
+            alert("Respondiste todo mal, te invitamos a leer de vuelta la vida del santo.");
+        } else if (puntos === preguntas.length) {
+            alert("¡Felicitaciones! Respondiste todo bien, obtuviste la calificación perfecta.");
+        } else {
+            alert("Obtuviste la mitad bien, volvé a intentarlo.");
+        }
     }
 });
 
